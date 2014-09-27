@@ -4,7 +4,7 @@ require 'pry'
 
 
 def greeting
-  @answer = "<strong>Hello!</strong></br> I'm Sir Quackington, lord of the sea. Ask me anything,
+  @answer = "<strong>Hello!</strong><br> I'm Sir Quackington, lord of the sea. Ask me anything,
             and I will do my best to answer!"
 end
 
