@@ -1,0 +1,73 @@
+body {
+  font-size: 20px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#duck {
+  background-color: #f0f0f0;
+  background: url(/img/big_duck.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0px; /* Header Height */
+  bottom: 0px; /* Footer Height */
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+#bubble {
+  background-color: #fff;
+  position: fixed;
+  max-width: 50%;
+  top: 10%;
+  right: 65%;
+  left: 0;
+  padding: 1em;
+}
+
+#answer {
+  text-align: center;
+}
+
+#ask {
+  float:right;
+  padding-top: 10px;
+  padding-right: 30px;
+}
+
+input[type=text] {
+  font-size: 1em;
+  width: 500px;
+  padding: 5px;
+}
+
+
+#title {
+  float:left;
+  display: inline-block;
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 3px 6px;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.button:hover, .button:active {
+  background-color: #000;
+  color: #fff;
+}

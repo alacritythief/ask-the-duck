@@ -1,0 +1,19 @@
+<div id="duck">
+
+  <h1 id="title">Ask the Duck:</h1>
+
+  <div id="ask">
+    <form action="/question" method="post">
+      <input type="text" name="question">
+      <input type="submit" value="ask" class="button">
+    </form>
+  </div>
+
+
+  <div id="bubble">
+    <div id="answer">
+      <p><%= @answer %></p>
+    </div>
+  </div>
+
+</div>
