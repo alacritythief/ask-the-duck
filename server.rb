@@ -170,7 +170,7 @@ post'/' do
   elsif @question.first.include? "google"
     @answer = Duck.google(@question)
   elsif @question.first == "g"
-    if !@question[2].nil?
+    if !@question[1].nil?
       @query = Duck.query(@question)
       redirect "http://www.google.com/#q=#{@query}"
     else
@@ -179,7 +179,7 @@ post'/' do
   elsif @question.first.include? "wikipedia"
     @answer = Duck.wikipedia(@question)
   elsif @question.first == "w"
-    if !@question[2].nil?
+    if !@question[1].nil?
       @query = Duck.query(@question)
       redirect "http://en.wikipedia.org/w/index.php?search=#{@query}"
     else
@@ -188,16 +188,16 @@ post'/' do
   elsif @question.first.include? "overflow"
     @answer = Duck.overflow(@question)
   elsif @question.first == "o"
-    if !@question[2].nil?
+    if !@question[1].nil?
       @query = Duck.query(@question)
       redirect "http://stackoverflow.com/search?q=#{@query}"
     else
       redirect "http://stackoverflow.com/"
     end
-  elsif @question.first.include? "reddit" || @question.first == r
+  elsif @question.first.include? "reddit"
     @answer = Duck.reddit(@case_question)
   elsif @question.first == "r"
-    if !@question[2].nil?
+    if !@question[1].nil?
       @query = Duck.query(@case_question)
       redirect "http://www.reddit.com/r/#{@query}"
     else
