@@ -135,7 +135,7 @@ class Duck
               and everything<br>was made in one day for the<br>
               \"Ship-It Saturday\" hackathon there.</p>
               <p>Credit goes to <a href=\"http://en.wikipedia.org/wiki/Rubber_Duck_(sculpture)\">Florentijn Hofman</a> for the<br>
-              hansome duck you see in front of you.</p>"
+              handsome duck you see in front of you.</p>"
   end
 end
 
